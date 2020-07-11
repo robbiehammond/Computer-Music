@@ -11,12 +11,17 @@ Only needs Java installed to run and generate music you can listen to, but also 
 - Clone the repo.
 - Go to the directory in terminal.
 - run `java -cp JFugue/jfugue-5.0.9.jar; Main` and then follow the GUI prompts.
-  -  Note: As stated earlier, it is required to have LilyPond to view the sheet music for the melodies.
+- If you wish to generate a new song, choose settings from the Drums On, Chords On, Key, and Major/Minor boxes,
+and then fill in a number of measures in integer form. The characteristics of the generated song will be based on these choices.
+- If you wish to replay a melody, place your JFugue text (which is the first line of text in the output after a song was generated) in 
+the Input Song field and make sure you have the key field set to the same note that the song was generated in, in addition to the Major/Minor field set to 
+the same scale that the song was generated in. This information is displayed in the second line of the output once a song is generated, following
+the text "Extra Info." If these settings do not match the settings displayed when the song was first generated, the result will likely sound bad and
+you may encounter problems.
+  -  Make sure to not copy the second line containing Extra Info into the Input Song field. Even so, the extra info is still important,
+  because as stated earlier, playing a song with the wrong Key and/or Major/Minor settings will not produce the desired result.
+-  As discussed above, it is required to have LilyPond to view the sheet music for the melodies.
   However, LilyPond is not at all necessary to generate and play back songs.
-  -  Another Note: To replay a song, copy the first line of text that is displayed in the output
-  into the Input Song, making sure to not copy the second line of Extra Info. However, the extra info is still important,
-  as it contains the key signature of the song when it was generated. If you attempt to replay a song with the wrong
-  key signature inputted in the Key field, it will likely sound bad and you may encounter errors.
-  -  Final Note: Even if a melody was generated with the drums and/or chords off, they can still be turned 
+- Even if a melody was generated with the drums and/or chords off, they can still be turned 
   on for the same song at a later point. Vice Versa also applies. The drums and chords are generated and put into the 
   JFugue text after the melody itself was already generated, so they are toggleable at any point.
