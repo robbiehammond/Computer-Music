@@ -8,6 +8,7 @@ Only needs Java installed to run and generate music you can listen to, but also 
   - https://youtu.be/4PLGNAwlTfk
 
 ## How to Use
+Currently known to work on Windows. MacOS and Linux Untested.
 - Clone the repo.
 - Go to the directory in terminal.
 - run `java -cp JFugue/jfugue-5.0.9.jar; Main` and then follow the GUI prompts.
@@ -20,8 +21,9 @@ the text "Extra Info." If these settings do not match the settings displayed whe
 you may encounter problems.
   -  Make sure to not copy the second line containing Extra Info into the Input Song field. Even so, the extra info is still important,
   because as stated earlier, playing a song with the wrong Key and/or Major/Minor settings will not produce the desired result.
--  As discussed above, it is required to have LilyPond to view the sheet music for the melodies.
-  However, LilyPond is not at all necessary to generate and play back songs.
+-  Once a melody is generated, a .ly file is generated and automatically placed on the desktop. This file can be double clicked (assuming you have LilyPond installed)
+and a pdf containing the sheet music for the most recently generated melody is created. As discussed above, it is required to have 
+LilyPond to view the sheet music for the melodies. However, LilyPond is not at all necessary to generate and play back songs.
 - Even if a melody was generated with the drums and/or chords off, they can still be turned 
   on for the same song at a later point. Vice Versa also applies. The drums and chords are generated and put into the 
   JFugue text after the melody itself was already generated, so they are toggleable at any point.
