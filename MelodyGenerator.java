@@ -63,22 +63,22 @@ public class MelodyGenerator {
         //always can put at least 1 16th note, otherwise this function wouldn't be called
         durations.add(1);
 
-        //if there is less than a beat remaining, add chances for eighth notes to be selected
+        //if there are 2 or more 16ths in the measure remaining, add eigths.
         if (remaining >= 2) {
             for (int i = 0; i < 4; i++) { //add multiple so that they have a higher chance of being called
                 durations.add(2);
             }
         }
 
-        //if there is less than 2 beats remaining, add chances for quarter notes to be selected
+        //if there is a beat or more, add chances for quarter notes to be selected
         if (remaining >= 4) {
             for (int i = 0; i < 4; i++) {
                 durations.add(4);
             }
         }
 
-        //if there is less than 4 beats (ie the whole measure) remaining, add chances for half notes to be selected
-        //these should be relatively rare
+        //if there are 2 beats or greater remaining, add chances of half notes
+        //these should be relatively rare, so only add one 
         if (remaining >= 8) {
             durations.add(8);
         }
