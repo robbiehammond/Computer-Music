@@ -47,9 +47,10 @@ public class Key {
 
     //All (standard) keys
     /*Though this certainly could have been done algorithmically, generating notes for scales becomes problematic when
-     dealing with double sharps/double flats and when using technically "invalid" key signatures (such as G# minor).
+     dealing with key signatures that have double sharps/double flats (such as the Fx rather than G in G# major) and completely
+     restricts the addition of custom keys (ie a key using a non-heptatonic scale).
      Though this "brute force" method certainly is not as pretty, it allows for easy addition of keys and no issues for
-     implementing standard, custom, and theoretical keys.
+     implementing both standard and theoretical keys.
      */
     public void addNotes() throws Exception {
         switch (key) {
