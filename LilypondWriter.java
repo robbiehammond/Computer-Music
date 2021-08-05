@@ -40,7 +40,7 @@ public class LilypondWriter {
     //put file with lilypond text on user's desktop
     public void writeToDesktop() throws IOException {
         String userHome = System.getProperty("user.home");
-        File result = new File(userHome + "\\Desktop\\" + "YourGeneratedSong.ly");
+        File result = new File(userHome, "YourGeneratedSong.ly");
         BufferedWriter out = new BufferedWriter(new FileWriter(result));
         out.write(writeLYFile());
         out.close();

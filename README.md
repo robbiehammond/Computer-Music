@@ -8,10 +8,10 @@ Only needs Java installed to run and generate music you can listen to, but also 
   - https://youtu.be/4PLGNAwlTfk
 
 ## How to Use
-Currently known to work on Windows. MacOS and Linux Untested.
+Currently known to work on Windows and macOS.
 - Clone the repo.
-- Go to the directory in terminal.
-- run `java -cp JFugue/jfugue-5.0.9.jar; Main` and then follow the GUI prompts.
+- Go to the directory in terminal, or open with any IDE
+- run Main.java, adding modules javafx.controls and javafx.fxml, and also including JFugue/jfugue-5.0.9.jar
 - If you wish to generate a new song, choose settings from the Drums On, Chords On, Key, and Major/Minor boxes,
 and then fill in a number of measures in integer form. The characteristics of the generated song will be based on these choices.
 - If you wish to replay a melody, place your JFugue text (which is the first line of text in the output after a song was generated) in 

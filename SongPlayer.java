@@ -8,7 +8,6 @@ public class SongPlayer {
 
     //put everything together and have it ready for the GUI
     public static void play() {
-        //JFugue player
         Player player = new Player();
         player.play(gen.song + "0s"); // "0s" to hear the last note and a clean release
     }

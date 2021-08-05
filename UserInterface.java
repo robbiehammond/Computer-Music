@@ -233,8 +233,8 @@ public class UserInterface extends Application {
                             });
                     SongPlayer.play();
                 } catch (Exception e) {
-                    Platform.runLater(() -> output.appendText("Uh oh, something went wrong. Please report this as an " +
-                            "issue on Github."));
+                    e.printStackTrace();
+                    Platform.runLater(() -> output.appendText("Uh oh, something went wrong."));
                 }
             }
             if (type.equals("From Input")) {
@@ -269,8 +269,7 @@ public class UserInterface extends Application {
                 } catch (Exception e) {
                     //if it is not working, it is most likely due to an improper key. Alert the user
                     Platform.runLater(() -> output.appendText("There was a problem in generating the chords. Did you make sure you put in the " +
-                                    "appropriate key in the key field?\nAre you sure the formatting is correct? If so, report " +
-                                    "the issue on Github.")
+                                    "appropriate key in the key field?\nAre you sure the formatting is correct?")
                             );
                 }
             }
